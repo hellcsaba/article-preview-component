@@ -98,14 +98,20 @@ body {
 
 .article__share {
     margin-inline-start: auto;
-}
-
-.article__share {
     border-radius: 50%;
     border: none;
     background-color: var(--light-grayish-blue);
     width: 2.25rem;
     height: 2.25rem;
+}
+
+.article__share:hover {
+    background-color: var(--desaturated-dark-blue);
+    cursor: pointer;
+}
+
+.article__share:hover .article__share-icon {
+    filter: brightness(0) invert(1); /* Invert the color to white */
 }
 
 @media (min-width: 40rem) {
