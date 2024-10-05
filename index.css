@@ -38,7 +38,6 @@ body {
     background-color: white;
     border-radius: 0.625rem;
     max-width: 20rem;
-    overflow: hidden;
 }
 
 .article__image {
@@ -177,4 +176,30 @@ body {
         font-size: 1.25rem;
     }
 
+    .article__footer {
+        position: relative;
+    }
+
+    .article__share-content {
+        position: absolute;
+        top: -4rem;
+        right: -4.6rem;
+        border-radius: 0.625rem;
+    }
+
+    .article__share--inverse {
+        display: none;
+    }
+
+   /* Add the triangle */
+    .article__share-content::after {
+        content: "";
+        position: absolute;
+        bottom: -1.75rem;
+        left: 50%;
+        transform: translateX(-50%);
+        border-width: 1rem;
+        border-style: solid;
+        border-color: var(--very-dark-grayish-blue) transparent transparent transparent;
+    }
 }
